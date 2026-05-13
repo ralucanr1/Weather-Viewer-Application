@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>City Weather App - Animație și Interactivitate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    
+
+    <script defer src="scripts/index.js"></script>
+</head>
+<body>
+    
+    <div id="root">
+      
+        <h1>Aplicația Meteo</h1>
+
+
+        <div class="search-container">
+            <label for="city-input">Căutați orașul:</label>
+            <input type="text" id="city-input" placeholder="Introduceți orașul" autocomplete="off">
+        </div>
+
+    
+        <ul id="suggestions"></ul>
+
+        <div id="weather-card" class="weather-card">
+            <h2 id="city-name">Orașul</h2>
+            <p id="weather-description">Condiții meteo</p>
+            <p id="temperature">Temperatura: --°C</p>
+            <p id="humidity">Umiditate: --%</p>
+        </div>
+
+        <div id="forecast-card" class="forecast-card">
+            <h2>Prognoza pe 5 zile</h2>
+            <div id="forecast-content">
+            </div>
+        </div>
+
+        <div id="favorites">
+            <h2>Orașe Favorite</h2>
+            <ul id="favorites-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
